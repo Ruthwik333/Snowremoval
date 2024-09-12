@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Montreal Snow Removal</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">Montreal Snow<span> Removal</span></a>
+		<div class="menuToggle" onclick="toggleMenu()"></div>
+		<ul class="navigation">
+			<li><a href="#home" onclick="toggleMenu()">Home</a></li>
+			<li><a href="#services" onclick="toggleMenu()">Services</a></li>
+			<li><a href="#about" onclick="toggleMenu()">About</a></li>
+			<li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+			<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+		</ul>
+	</header>
+    <section class="banner" id="banner">
+        <video autoplay muted loop class="background-video">
+            <source src="img/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h2>Reliable Snow Removal for Montreal</h2>
+            <p>We offer fast and efficient snow removal services for residential and commercial properties in Montreal.</p>
+            <a href="#services" class="btn">Our Services</a>
+        </div>
+    </section>
+    
+	
+    
+
+	<section class="services" id="services">
+		<div class="title">
+			<h2>Our <span>S</span>ervices</h2>
+			<p>Professional and timely snow removal solutions tailored to your needs.</p>
+		</div>
+		<div class="content">
+			<div class="box">
+				<img src="img/snow-plow.jpg" alt="Residential Snow Removal">
+				<h3>Residential Snow Removal</h3>
+				<p>Keep your driveways and walkways clear of snow and ice.</p>
+			</div>
+			<div class="box">
+				<img src="img/commercial-snow.jpg" alt="Commercial Snow Removal">
+				<h3>Commercial Snow Removal</h3>
+				<p>Ensure the safety of your business with our snow removal and de-icing services.</p>
+			</div>
+			<div class="box">
+				<img src="img/de-icing.jpg" alt="De-Icing">
+				<h3>De-Icing & Salting</h3>
+				<p>Prevent accidents with our de-icing and salting services.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="about" id="about">
+		<div class="row">
+			<h2 class="titleText">About <span>U</span>s</h2>
+			<p>We have been providing reliable snow removal services in Montreal for over 10 years.</p>
+		</div>
+	</section>
+
+	<section class="testimonials" id="testimonials">
+		<div class="title">
+			<h2>What They</span> Said About Us</h2>
+		</div>
+		<div class="content">
+			<div class="box">
+				<img src="img/client1.jpg" alt="Client Testimonial">
+				<p>"Fast and reliable! They keep our driveway clean every winter."</p>
+				<h3>– John, Montreal</h3>
+			</div>
+			<div class="box">
+				<img src="img/client2.jpg" alt="Client Testimonial">
+				<p>"Their de-icing service really makes a difference for our business."</p>
+				<h3>– Marie, Quebec City</h3>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="title">
+			<h2>Contact <span>U</span>s</h2>
+		</div>
+		<div class="contactForm">
+			<h3>Send Message</h3>
+			<form action="#">
+				<input type="text" placeholder="Name" required>
+				<input type="email" placeholder="Email" required>
+				<textarea placeholder="Message" required></textarea>
+				<input type="submit" value="Send">
+			</form>
+		</div>
+	</section>
+
+	<div class="copyrightText">
+		<p>&copy; 2024 Montreal Snow Removal. All Rights Reserved.</p>
+	</div>
+
+	<script>
+		function toggleMenu() {
+			const menuToggle = document.querySelector('.menuToggle');
+			const navigation = document.querySelector('.navigation');
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
